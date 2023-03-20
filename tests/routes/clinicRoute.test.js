@@ -29,26 +29,24 @@ describe("Clinic Search", () => {
     const response = await request(app)
       .post("/api/v1/search")
       .send({
-        name: "Nonexistent Clinic",
-        state: "Invalid State",
+        name: "Scratch",
+        state: "CA",
         availablilityFrom: "26:30",
-        availabilityTo: "27:59",
+        availabilityTo: "27:59", // Invalid time
       })
       .expect(400);
 
     const clinics = response.body;
 
     console.log(clinics);
-    // expect(response.body.data).toBeInstanceOf(Array);
-    // expect(response.body.data.length).toBe(0);
   });
 
   it("should respond with a list of clinics for a valid query", async () => {
     const response = await request(app)
       .post("/api/v1/search")
       .send({
-        name: "Non Existent",
-        state: "Invalid",
+        name: "Non Existent", // Non existing name
+        state: "Invalid", // Invalid State
         availableFrom: "01:00",
         availableTo: "26:00",
       })
