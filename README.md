@@ -1,1 +1,1 @@
-an Application that searches for clinics and availability from multiple sources
+an pplication that searches for clinics and availability from multiple sources

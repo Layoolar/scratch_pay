@@ -1,0 +1,27 @@
+{
+  "name": "scratch_pay",
+  "version": "1.0.0",
+  "description": "an pplication that searches for clinics and availability from multiple sources",
+  "main": "server.js",
+  "scripts": {
+    "test": "jest --verbose --watchAll --runInBand --detectOpenHandles --forceExit --coverage"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Layoolar/scratch_pay.git"
+  },
+  "keywords": [
+    "Scratch",
+    "Scratchpay",
+    "Hospital",
+    "Opened",
+    "Dental",
+    "Vet"
+  ],
+  "author": "Olayiwola Ayoola",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Layoolar/scratch_pay/issues"
+  },
+  "homepage": "https://github.com/Layoolar/scratch_pay#readme"
+}
