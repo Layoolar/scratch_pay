@@ -11,6 +11,9 @@ const { options } = require("./documentation/swaggerDocumentation");
 const app = express();
 require("dotenv").config();
 
+// Routes Definition
+const clinicRoutes = require("./src/routes/clinicRoute");
+
 // Middlewares
 app.use(cors());
 app.use(bodyParser.json());
@@ -30,5 +33,6 @@ app.use(
 );
 
 // Routes
+app.use("/api/v1", clinicRoutes);
 
 module.exports = app;
