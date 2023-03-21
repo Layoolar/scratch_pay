@@ -91,3 +91,5 @@ Continous Integration implemented on [Github Actions](https://github.com/Layoola
 - Used Winston for logging to help us get more insight 
 - A different log each file for each day to make maintainance easy
 - Not to use Typescript as it increases required time
+- Constant commits after each file to make going back to any point easy 
+
