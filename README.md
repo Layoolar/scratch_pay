@@ -56,10 +56,12 @@ This project was bootstrapped with these
 
 ### Doc
 After NPM start
+
 [Swagger Doc](http://localhost:5000/docs/)
 
 ### Clinic Sources
 [DENTAL_CLINICS_API_URL](https://storage.googleapis.com/scratchpay-code-challenge/dental-clinics.json)
+
 [VET_CLINICS_API_URL](https://storage.googleapis.com/scratchpay-code-challenge/vet-clinics.json)
 
 ### Assumptions
