@@ -4,7 +4,7 @@
   "description": "an pplication that searches for clinics and availability from multiple sources",
   "main": "server.js",
   "scripts": {
-    "test": "jest --verbose --watchAll --runInBand --detectOpenHandles --forceExit --coverage"
+    "test": "jest"
   },
   "repository": {
     "type": "git",
