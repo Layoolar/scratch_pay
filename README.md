@@ -86,3 +86,4 @@ Continous Integration implemented on [Github Actions](https://github.com/Layoola
 - Returns an error if a customer searches above 23:59 or below 00:00
 - Using express as the framework because it is lightweigt and fast
 - Using Jest for testing because it is easy to use
+- Not to use Typescript as it increases required time
