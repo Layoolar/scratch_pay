@@ -6,6 +6,8 @@
 - [Documentation](#doc)
 - [Frameworks](#Frameworks)
 - [Clinic Sources](#clinic-sources)
+- [Continous Integration](#continous-integration)
+- [Docker Image](#docker-image)
 - [Assumptions](#assumptions)
 - [Decision](#decisions)
 
@@ -15,6 +17,8 @@ An application that fetches clinic list from multiple sources and filters them b
 
 ### NPM Start
 Starts the server on port 5000 or any set port in the .env file
+
+Runs node server.js
 
 ### Usage
 - Clone this repository
@@ -63,6 +67,12 @@ After NPM start
 [DENTAL_CLINICS_API_URL](https://storage.googleapis.com/scratchpay-code-challenge/dental-clinics.json)
 
 [VET_CLINICS_API_URL](https://storage.googleapis.com/scratchpay-code-challenge/vet-clinics.json)
+
+### Continous Integration
+Continous Integration implemented on [Github Actions](https://github.com/Layoolar/scratch_pay/actions)
+
+### Docker Image
+[DockerHub](https://hub.docker.com/repository/docker/layoolar/scratch_pay/general)
 
 ### Assumptions
 - That the client is looking for any available time within the range and should return any overlap.
