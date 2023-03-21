@@ -9,7 +9,7 @@
 - [Continous Integration](#continous-integration)
 - [Docker Image](#docker-image)
 - [Assumptions](#assumptions)
-- [Decision](#decisions)
+- [Decisions](#decisions)
 
 ### Description
 
@@ -79,11 +79,15 @@ Continous Integration implemented on [Github Actions](https://github.com/Layoola
 - That I am working alone on the project, hence no need to checkout the branch.
 - We will eventually scale to source for clinics outside US, hence why I created a key value for state codes instead of using a framework.
 - The endpoint is available to everyone. Hence, no need for authorization
+- We are interested in keeping logs. 
 
 
-### Decision
+### Decisions
 - Allow customers to search with only one time constraint.
 - Returns an error if a customer searches above 23:59 or below 00:00
 - Using express as the framework because it is lightweigt and fast
 - Using Jest for testing because it is easy to use
+- Logging has been loosely coupled to enable easy removal
+- Used Winston for logging to help us get more insight 
+- A different log each file for each day to make maintainance easy
 - Not to use Typescript as it increases required time
