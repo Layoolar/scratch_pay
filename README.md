@@ -83,6 +83,7 @@ Continous Integration implemented on [Github Actions](https://github.com/Layoola
 
 
 ### Decisions
+- The "try me out" in the documentation has been left strictly for grading purposes. In a live environment, this should be removed as it poses a great security risk. 
 - Allow customers to search with only one time constraint.
 - Returns an error if a customer searches above 23:59 or below 00:00
 - Using express as the framework because it is lightweigt and fast
